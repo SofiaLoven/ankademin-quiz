@@ -12,3 +12,22 @@ darkmode.addEventListener("change", ()=>{
 
 
 let resultBtn = document.querySelector("#result");
+let result = document.querySelector("#colorResult");
+
+resultBtn.addEventListener("click", ()=>{
+result.innertext = "";
+
+let answer = document.querySelectorAll(" .q:checked");
+let answerArr = Array.from(answer);
+
+filteredAnswer = answerArr.filter((value)=>{
+    return value.value === "right";
+});
+
+let amount =filteredAnswer.length;
+let sum = `${amount}/10 poäng`;
+
+result.append(sum);
+
+
+});

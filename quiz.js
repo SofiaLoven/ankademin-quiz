@@ -17,26 +17,47 @@ let result = document.querySelector("#colorResult");
 resultBtn.addEventListener("click", ()=>{
 result.innerHTML = "";
 
+//True False och check one.
 let answer = document.querySelectorAll(" .q:checked");
 let answerArr = Array.from(answer);
 
-filteredAnswer = answerArr.filter((value)=>{
-    return value.value === "right";
+
+let filteredAnswer = answerArr.filter((arr)=>{
+    return arr.value === "right";
 });
 
-let amount = filteredAnswer.length;
-let sum = "";
+// Chech Three
+let answerThree = document.querySelectorAll("input[type='checkbox'][class='checkThree']:checked");
+//let threeArr= Array.from(answerThree);
+let threeArr=[];
+answerThree.forEach((arr)=>{
+    threeArr.push(arr.value);
+});
+
+let filterThree = threeArr.filter((arr)=>{
+    return arr === "right";
+});
+
+let sum=0;
+if(+filterThree.length===3){
+    sum=1;
+}else if(+filterThree.length===6){
+    sum=2;
+};
+
+let amount = +filteredAnswer.length + sum;
+let total = "";
 
 if(amount < 0.5*10){
     result.style.color ="red";
-    sum = `${amount}/10 poäng. Du är tyvärr underkänd.`
+    total = `${amount}/10 poäng. Du är tyvärr underkänd.`
 } else if (amount <= 0.75*10){
     result.style.color ="orange";
-    sum =`${amount}/10 poäng. Du är godkänd.`
+    total =`${amount}/10 poäng. Du är godkänd.`
 }else{
     result.style.color ="green";
-    sum = `${amount}/10 poäng. Du är mycket väl godkänd.`
+    total = `${amount}/10 poäng. Du är mycket väl godkänd.`
 };
-result.append(sum);
+result.append(total);
 
 });

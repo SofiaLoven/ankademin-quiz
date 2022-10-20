@@ -12,3 +12,18 @@ Skriv ut antal rätt som användaren fått. Använd även färg och text för at
 50%-75% - Godkänt (gul/orange)
 > 75% - Mycket väl godkänt (grönt)
 Du har gjort minst 3 commits till ditt Github-repository under projektets gång.
+
+VG
+Alla G-krav är uppfyllda
+
+Frågorna ska bestå utav en blandning av följande typer (minst 2 av varje typ)
+
+Sant/falskt-påståenden - (Två svarsalternativ - Sant eller Falskt)
+
+Multiple choice - (Fyra svarsalternativ varav ett rätt svar)
+
+Checkbox-svar (4 checkboxar med svarsalternativ - 1-3 rätta svar, minst 1 felaktigt svar).
+
+Användaren ska kunna se exakt vilka frågor hen besvarat rätt och/eller felaktigt när resultatet visas. (Om hen besvarat frågan fel, bestämmer du själv om du vill skriva ut det rätta svaret eller inte).
+
+Tekniskt krav: Koden följer “DRY”-principen (Dont repeat yourself) och undviker större upprepningar av kod i logiken.

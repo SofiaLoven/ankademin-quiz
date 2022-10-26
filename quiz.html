@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-    <h2>Vad vet du om kroppen?</h2>
+    <h1>Vad vet du om kroppen?</h1>
     <label for="darkmode">Darkmode:</label>
     <input type="checkbox" id="darkmode">
     <div>
-        <div>
+        <div class="question">
             <p>1. När man föds har man 300 ben i kroppen. Men hur många har man i genomsnitt när man dör?</p>
             <input type="radio" name="f1" class="q" value="wrong" id="152">
             <label for="152">152st</label>
@@ -23,7 +24,7 @@
             <label for="260">260st</label>
             <div id="q1"></div>
         </div>
-        <div>
+        <div class="question">
             <p>2. Den vänstra lungan är mindre än den högra.</p>
             <input type="radio" name="f2" class="q" value="right" id="true2">
             <label for="true2">Sant</label>
@@ -31,7 +32,7 @@
             <label for="false2">Falskt</label>
             <div id="q2"></div>
         </div>
-        <div>
+        <div class="question">
             <p>3. Vilken är kroppens största organ?</p>
             <input type="radio" name="f3" class="q" value="wrong" id="lungorna">
             <label for="lungorna">Lungorna</label>
@@ -43,7 +44,7 @@
             <label for="mjalten">Mjälten</label>
             <div id="q3"></div>
         </div>
-        <div>
+        <div class="question">
             <p>4. Fettlever är en typ av cancer.</p>
             <input type="radio" name="f4" class="q" value="wrong" id="true4">
             <label for="true4">Sant</label>
@@ -51,7 +52,7 @@
             <label for="false4">Falskt</label>
             <div id="q4"></div>
         </div>
-        <div>
+        <div class="question">
             <p>5. Man kan födas med en spegelvänd anatomi (sinus transversus).</p>
             <input type="radio" name="f5" class="q" value="right" id="true5">
             <label for="true5">Sant</label>
@@ -59,7 +60,7 @@
             <label for="false5">Falskt</label>
             <div id="q5"></div>
         </div>
-        <div>
+        <div class="question">
             <p>6. Vilka tre alternativ är typer blodkärl?</p>
             <input type="checkbox" name="f6" class="check6" value="right" id="artär">
             <label for="artär">Artär</label>
@@ -71,7 +72,7 @@
             <label for="kapillär">Kapillär</label>
             <div id="q6"></div>
         </div>
-        <div>
+        <div class="question">
             <p>7. Vilka tre påståenden stämmer om Pacemakern?</p>
             <input type="checkbox" name="f7" class="check7" value="right" id="land">
             <label for="land">Det är en svensk uppfinning</label>
@@ -83,7 +84,7 @@
             <label for="typ">En pacemaker kan innehålla en defibrillator.</label>
             <div id="q7"></div>
         </div>
-        <div>
+        <div class="question">
             <p>8. Öronen slutar växa vid ca 30 års ålder.</p>
             <input type="radio" name="f8" class="q" value="wrong" id="true8">
             <label for="true8">Sant</label>
@@ -91,7 +92,7 @@
             <label for="false8">Falskt</label>
             <div id="q8"></div>
         </div>
-        <div>
+        <div class="question">
             <p>9. Tarmarna är upphänga på bukhinnans vägg. Ungefär som en girlang.</p>
             <input type="radio" name="f9" class="q" value="right" id="true9">
             <label for="true9">Sant</label>
@@ -99,7 +100,7 @@
             <label for="false9">Falskt</label>
             <div id="q9"></div>
         </div>
-        <div>
+        <div class="question">
             <p>10. Om ens kost enbart består bananer så ökar risken för att man får farliga hjärtrytmer.</p>
             <input type="radio" name="f10" class="q" value="right" id="true10">
             <label for="true10">Sant</label>
@@ -110,7 +111,7 @@
     </div>
     <br>
     <button id="result">Tryck för resultat.</button>
-    <h1 id="colorResult"></h1>
+    <h3 id="colorResult"></h3>
 
     <script src="quiz.js"></script>
 </body>

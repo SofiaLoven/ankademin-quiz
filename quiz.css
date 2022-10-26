@@ -1,0 +1,26 @@
+body {
+    background-color: #53c68c;
+    color: #133926;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+ .question{
+    border-style: dotted;
+    border-width: thick;
+    border-color: white;
+    border-radius: 12px;
+    margin: 25px 100px;
+ }
+#result{
+    background-color: inherit;
+    border-style: dotted;
+    border-color: inherit;
+    border-width: thick;
+    font-size: inherit;
+    border-radius: 12px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}

@@ -5,8 +5,8 @@ darkmode.addEventListener("change", ()=>{
     document.body.style.background = "black";
     document.body.style.color = "white";
     } else{
-        document.body.style.background ="white";
-        document.body.style.color ="black";
+        document.body.style.background ="#53c68c";
+        document.body.style.color ="#133926";
     };
 });
 
@@ -23,7 +23,7 @@ function colorWrong(qNumber){
     };
 }; 
 
-function checkbox(number){
+function checkbox(number, right){
     sum=0;
     let answer = document.querySelectorAll(`input[type='checkbox'][class='check${number}']:checked`);
     let arr=[];
@@ -33,7 +33,7 @@ function checkbox(number){
         let arrFiltered = arr.filter((arr)=>{
             return arr === "right";
         });
-        if(+arrFiltered.length===3){
+        if(+arrFiltered.length===right){
         sum+=1;
         };
         return sum;
@@ -54,8 +54,8 @@ resultBtn.addEventListener("click", ()=>{
         return arr.value === "right";
     });
     //Check three.
-    let answerSix = checkbox(6);
-    let answerSeven = checkbox(7);
+    let answerSix = checkbox(6,3);
+    let answerSeven = checkbox(7,3);
     sum = answerSix + answerSeven;
 
     //Räkna ihop totalen.
